@@ -139,3 +139,19 @@ border-radius: 5px; /* Bordas arredondadas no botão */
 } 
 section {
  padding: 100px 40px; /* Espaçamento interno nas secções (superior/inferior e laterais) */ text-align: center; /* Centraliza todo o conteúdo textual por padrão */min-height: 100vh; /* Garante que cada secção tenha pelo menos a altura de uma janela inteira */} 
+ #servicos {
+ max-width: 1200px;
+ margin: 50px auto;
+ padding: 50px;
+ scroll-margin-top: 100px;
+}
+.servicos-container {
+ display: flex; /* Organiza os elementos internos em linha (flexível) */flex-wrap: wrap; /* Permite que os elementos passem para a linha seguinte em ecrãs menores */justify-content: center; /* Centraliza os elementos horizontalmente */}
+.servico {
+ width: 300px; /* Define a largura de cada “cartão” de serviço */ margin: 20px; /* Espaçamento entre os cartões */
+ padding: 20px; /* Espaçamento interno dentro de cada cartão */ background-color: #eee; /* Cor de fundo cinzenta clara para destacar cada serviço */ border-radius: 5px; /* Bordas arredondadas para um visual mais suave */ text-align: center; /* Centraliza o conteúdo dentro de cada serviço */}
+.servico img {
+ width: 100px; /* Largura da imagem */
+ height: 100px; /* Altura da imagem */
+ border-radius: 50%; /* Torna a imagem circular */
+ margin-bottom: 10px; /* Espaço entre a imagem e o texto seguinte */} 
