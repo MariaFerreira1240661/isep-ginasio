@@ -94,5 +94,28 @@ container-navegacao a:hover {
  text-align: center; /* Centraliza o texto dentro dos artigos */
  min-height: 100vh; /* Garante altura mínima de uma janela (ecrã) */
 } 
-
 }
+/* Seção "Quem Somos" */
+#quem-somos {
+text-align: center; /* Centra todo o conteúdo horizontalmente */padding: 100px 0; /* Espaçamento superior e inferior de 100px */}
+.quem-somos-content {
+max-width: 800px; /* Largura máxima de 800px para limitar o conteúdo */ margin: 0 auto; /* Centra horizontalmente o conteúdo */
+}
+.quem-somos-content h1 {
+font-size: 3em; /* Tamanho grande para o título principal */ margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+.quem-somos-content p {
+font-size: 1.2em; /* Aumenta o tamanho da letra do parágrafo */ margin-bottom: 30px; /* Espaço abaixo do parágrafo */
+}
+.quem-somos-content img {
+width: 700px; /* Define uma largura fixa da imagem */
+height: 165px; /* Define uma altura fixa da imagem */
+display: block; /* Faz com que a imagem se comporte como bloco (para usar margin auto) */margin: 20px auto; /* Centraliza a imagem com margens acima e abaixo */ object-fit: cover; /* Corta a imagem de forma proporcional sem distorcer */}
+
+.button {
+display: inline-block; /* Permite definir largura/altura e manter como botão em linha */background-color: #aaaaaa; /* Cor de fundo cinza-claro */
+color: #fff; /* Cor do texto branca */
+padding: 10px 20px; /* Espaçamento interno (vertical x horizontal) */ text-decoration: none; /* Remove o sublinhado do link */
+border-radius: 5px; /* Bordas arredondadas no botão */
+}
+
