@@ -155,3 +155,21 @@ section {
  height: 100px; /* Altura da imagem */
  border-radius: 50%; /* Torna a imagem circular */
  margin-bottom: 10px; /* Espaço entre a imagem e o texto seguinte */} 
+ /* Estilos para a secção Preçário */
+.pacotes-container {
+ display: flex; /* Organiza os pacotes lado a lado */flex-wrap: wrap; /* Permite quebra de linha em ecrãs pequenos */justify-content: center; /* Centraliza os pacotes horizontalmente */}
+.pacote {
+ width: 300px; /* Largura de cada cartão */
+ margin: 20px; /* Espaço entre os cartões */
+ padding: 20px; /* Espaço interno dentro de cada cartão */ background-color: #eee; /* Fundo cinzento claro */
+ border-radius: 5px; /* Bordas arredondadas */
+ text-align: center; /* Centraliza o conteúdo */
+}
+.pacote .preco {
+ font-size: 1.5em; /* Tamanho maior para destacar o preço */ font-weight: bold; /* Texto em negrito */
+margin-bottom: 10px; /* Espaço abaixo do preço */
+}
+.pacote ul {
+ list-style: none; /* Remove os marcadores padrão da lista */padding: 0; /* Remove preenchimento interno */ margin-bottom: 20px; /* Espaço entre a lista e o botão */}
+.pacote ul li {
+ margin-bottom: 5px; /* Espaço entre cada linha da lista */} 
