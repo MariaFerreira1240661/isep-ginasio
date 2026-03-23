@@ -42,12 +42,43 @@
     </nav>
 </aside>
 <!-- Conteúdo Principal -->
-<main class="content">
-    <section>
-        <h2>Gestão de Clientes</h2>
-        <p>Aqui poderá consultar, adicionar, editar e remover os clientes do ginásio.</p>
-    </section>
-</main> 
+    <div class="content">
+        <div class="actions-top">
+            <h2><strong><i class="fa-solid fa-address-book"></i> Listagem de Clientes </strong></h2> <a href="novo.html"><i
+                    class="fa-solid fa-plus me-2"></i> Novo cliente</a>
+        </div>
+        <br>
+        <hr>
+        <p>Não existem clientes registados.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Sexo</th>
+                    <th>Data nascimento</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                    <th>Sistema de Saúde</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[Nome Cliente]</td>
+                    <td>[Sexo]</td>
+                    <td>[data_Nasc]</td>
+                    <td>[email]</td>
+                    <td>[Telefone]</td>
+                    <td>[sistema_saude]</td>
+                    <td>
+                        <a href="detalhes.html"><i class="fa-solid fa-eye me-2"></i> Consultar</a> <span>|</span>
+                        <a href="editar.html"><i class="fa-regular fa-pen-to-square me-2"></i> Editar</a> <span>|</span>
+                        <a href="apagar.html"><i class="fa-solid fa-trash-can me-2"></i> Eliminar</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     
 </body>
