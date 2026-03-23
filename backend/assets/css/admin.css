@@ -289,3 +289,102 @@ td span {
     text-align: center;
     /* Alinha o texto ao centro */
 }
+/* Caixa de confirmação de eliminação */
+.caixa-apagar {
+    width: 500px;
+    /* Largura fixa da caixa */
+    margin: 100px auto;
+    /* Margem superior/inferior de 100px e centralização horizontal */
+    padding: 30px;
+    /* Espaçamento interno (topo, baixo e lados) */
+    border: 1px solid #ccc;
+    /* Borda cinzenta clara */
+    text-align: center;
+    /* Alinha o conteúdo ao centro */
+    background-color: #fff;
+    /* Fundo branco */
+    border-radius: 6px;
+    /* Bordas arredondadas */
+}
+/* Ícone de alerta */
+.icone-alerta {
+    font-size: 36px;
+    /* Tamanho grande do ícone */
+    color: #ffc107;
+    /* Cor amarela (cor de aviso) */
+    margin-bottom: 10px;
+    /* Espaço abaixo do ícone */
+}
+/* Texto da pergunta */
+.caixa-apagar p {
+    margin: 10px 0;
+    /* Espaço acima e abaixo do parágrafo */
+    font-size: 16px;
+    /* Tamanho da fonte médio */
+}
+
+/* Informações do cliente */
+.info-cliente {
+    margin: 20px 0;
+    /* Espaço acima e abaixo do bloco de informações */
+    font-size: 14px;
+    /* Tamanho do texto das informações */
+}
+
+/* Área dos botões */
+.botoes {
+    margin-top: 20px;
+    /* Espaço acima dos botões */
+}
+/* Estilo comum dos botões */
+.botao-cancelar,
+.botao-confirmar {
+    padding: 8px 20px;
+    /* Espaço interno (topo/baixo e lados) */
+    margin: 0 10px;
+    /* Espaço lateral entre os botões */
+    text-decoration: none;
+    /* Remove sublinhado dos links */
+    font-size: 14px;
+    /* Tamanho do texto */
+    border-radius: 4px;
+    /* Bordas arredondadas */
+    display: inline-block;
+    /* Permite aplicar espaçamentos e tamanho como bloco */
+}
+
+/* Botão "Não" */
+.botao-cancelar {
+    border: 1px solid #6c757d;
+    /* Borda cinzenta escura */
+    color: #6c757d;
+    /* Texto cinzento escuro */
+    background-color: transparent;
+    /* Fundo transparente */
+}
+
+.botao-cancelar:hover {
+    background-color: #f1f1f1;
+    /* Fundo claro ao passar o rato */
+}
+
+/* Botão "Sim" */
+.botao-confirmar {
+    background-color: #495057;
+    /* Fundo cinzento escuro */
+    color: white;
+    /* Texto branco */
+    border: none;
+    /* Sem borda */
+}
+
+.botao-confirmar:hover {
+    background-color: #343a40;
+    /* Cor mais escura ao passar o rato */
+}
+
+/* Espaço entre ícone e texto */
+.me-2 {
+    margin-right: 0.5rem;
+    /* Margem à direita equivalente a 8px */
+}
