@@ -42,13 +42,72 @@
     </nav>
 </aside>
 <!-- Conteúdo Principal -->
-<main class="content">
-    <section>
-        <h2>Gestão de Clientes</h2>
-        <p>Aqui poderá consultar, adicionar, editar e remover os clientes do ginásio.</p>
-    </section>
-</main> 
-
+<div class="form-wrapper">
+    <h2><strong><i class="fa-solid fa-pen-to-square"></i> Atualização de Dados CLIENTES</strong></h2>
+    <hr>
+    <form action="#" method="post" novalidate>
+div class="form-group">
+<label for="texto_nome">Nome Completo</label>
+<input type="text" name="nome_cliente" id="texto_nome" value="João Silva" required> </div>
+<div class="form-group">
+    <label for="texto_endereco">Morada <small>(NºPorta, Andar)</small></label> <input type="text" name="morada_cliente"
+        value="Rua das Flores, nº12, 2º Esq." id="texto_endereco">
+</div>
+<div class="form-group">
+    <label for="texto_cp">Código Postal</label>
+    <input type="text" name="cp_cliente" value="4000-123" id="texto_cp" required>
+</div>
+<div class="form-group">
+    <label for="texto_cidade">Cidade</label>
+    <input type="text" name="cid_cliente" value="Porto" id="texto_cidade" required>
+</div>
+<div class="form-group">
+    <label for="texto_cliente">Telefone</label>
+    <input type="text" name="tel_cliente" value="912345678" id="texto_cliente" required>
+</div>
+<div class="form-group">
+    <label for="texto_email">Email</label>
+    <input type="email" name="email_cliente" value="joao.silva@email.pt" id="texto_email" required>
+</div>
+<div class="form-group">
+    <label>Sexo</label><br>
+    <input type="radio" name="radio_gender" id="radio_m" value="m" checked> <label for="radio_m">Masculino</label>
+    <input type="radio" name="radio_gender" id="radio_f" value="f">
+    <label for="radio_f">Feminino</label>
+</div>
+<div class="form-group">
+    <label for="texto_dnasc">Data de nascimento</label>
+    <input type="text" name="dnasc_cliente" value="1985-07-20" id="texto_dnasc" disabled>
+</div>
+<div class="form-group">
+    <label for="texto_estcivil">Estado Civil</label>
+    <select name="estaciv_cliente" id="texto_estcivil">
+        <option>Escolha uma opção</option>
+        <option value="solt">Solteiro</option>
+        <option value="casd" selected>Casado</option>
+        <option value="ufat">União de Facto</option>
+    </select>
+</div>
+<div class="form-group">
+    <label for="texto_SSaude">Sistema de Saúde</label>
+    <input type="text" name="campo_opcao" id="texto_SSaude" value="ADSE" list="sistemasaude"> <datalist
+        id="sistemasaude">
+        <option value="SNS">
+        <option value="ADSE">
+        <option value="SMAS">
+        <option value="CTT">
+        <option value="PSP">
+    </datalist>
+</div>
+<div class="form-buttons">
+    <a href="lista.html"><i class="fa-solid fa-xmark"></i> Cancelar</a> <button type="submit"><i
+            class="fa-regular fa-floppy-disk"></i> Guardar</button>
+</div>
+<div class="alert text-center">
+    Erro simples
+</div>
+</form>
+</div>
     
 </body>
 </html>
