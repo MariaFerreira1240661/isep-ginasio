@@ -30,3 +30,21 @@ const pesoInput = document.getElementById("peso");
      } 
      pesoInput.addEventListener("input", atualizarIndicadorIMC);
      alturaInput.addEventListener("input", atualizarIndicadorIMC);
+
+function avaliarCondicoes() {
+    // Ler os estados das checkboxes
+    const problemasCostas = document.getElementById("temProblemasCostas").checked;
+    const gravida = document.getElementById("estaGravida").checked;
+    const diabetico = document.getElementById("temDiabetes").checked;
+    const mensagemElement = document.getElementById("mensagem");
+    // Avaliar as combinações e apresentar a recomendação
+    if (gravida) {
+        mensagemElement.textContent = "Encaminhar para o Professor João Faria (Especialista em exercício para grávidas).";
+    } else if (problemasCostas && diabetico) {
+        mensagemElement.textContent = "Necessário plano adaptado. Agendar consulta com especialista.";
+    } else if (problemasCostas || diabetico) {
+        mensagemElement.textContent = "Recomenda-se avaliação personalizada antes de iniciar o treino.";
+    } else {
+        mensagemElement.textContent = "Sem restrições. Pode iniciar o plano de treino geral.";
+    }
+} 
