@@ -388,3 +388,72 @@ td span {
     margin-right: 0.5rem;
     /* Margem à direita equivalente a 8px */
 }
+.home-wrapper {
+    max-width: 1000px;
+    /* Largura máxima da área */
+    margin: 50px auto;
+    /* Margem superior/inferior 50px e centralização horizontal */
+    text-align: center;
+    /* Centraliza o conteúdo dentro da área */
+}
+
+.home-row {
+    display: flex;
+    /* Usa o layout flexível para organizar os itens na horizontal */
+    justify-content: center;
+    /* Centraliza os botões horizontalmente */
+    gap: 30px;
+    /* Espaço de 30px entre os botões */
+    margin-bottom: 30px;
+    /* Espaço inferior entre as linhas de botões */
+}
+
+.home-option {
+    background-color: rgb(200, 200, 200);
+    /* Cor de fundo cinzenta clara */
+    width: 200px;
+    /* Largura do botão */
+    height: 120px;
+    /* Altura do botão */
+    border-radius: 10px;
+    /* Cantos arredondados */
+    padding: 20px;
+    /* Espaçamento interno */
+    transition: background-color 0.3s;
+    /* Suaviza a mudança de cor ao passar o rato */
+}
+
+.home-option:hover {
+    background-color: rgb(127, 127, 127);
+    /* Cor de fundo mais escura ao passar o rato */
+}
+
+.home-option h3 {
+    margin-bottom: 10px;
+    /* Espaço inferior abaixo do ícone */
+}
+
+/* Remove o sublinhado e define a cor do texto dos links */
+.unlink,
+.unlink:hover {
+    color: black;
+    /* Define a cor preta para o texto dos links */
+    text-decoration: none;
+    /* Remove sublinhado */
+}
+/* Classe para IMC abaixo do peso */
+.abaixoPeso {
+ color: green;
+}
+/* Classe para IMC peso normal */
+.pesoNormal {
+ color: green;
+}
+/* Classe para IMC sobrepeso */
+.sobrepeso {
+ color: red;
+}
+/* Classe para IMC obeso */
+.obeso {
+ color: red;
+}
