@@ -48,3 +48,26 @@ function avaliarCondicoes() {
         mensagemElement.textContent = "Sem restrições. Pode iniciar o plano de treino geral.";
     }
 } 
+function selecionarServico(servico) {
+    document.getElementById('opcoesPT').style.display = 'none';
+    document.getElementById('opcoesAG').style.display = 'none';
+    document.getElementById('resultadoPT').innerHTML = '';
+    document.getElementById('resultadoAG').innerHTML = '';
+    if (servico === 'PT') {
+        document.getElementById('opcoesPT').style.display = 'block';
+    } else {
+        document.getElementById('opcoesAG').style.display = 'block';
+    }
+}
+function mostrarPrecoPT(vezes) {
+    const precos = [54, 103, 150, 198];
+    const preco = precos[vezes - 1];
+    document.getElementById('resultadoPT').innerText = `Preço: ${preco} EUR / quinzena`;
+}
+function mostrarPrecoAG(freq) {
+    let preco = '';
+    if (freq == 1) preco = '16.9 EUR / quinzena';
+    else if (freq == 2) preco = '26 EUR / quinzena';
+    else preco = '31.9 EUR / quinzena';
+    document.getElementById('resultadoAG').innerText = 'Preço: ' + preco;
+}
