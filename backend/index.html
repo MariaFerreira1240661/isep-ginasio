@@ -21,36 +21,60 @@
 </head>
 <body>
     <!-- Navbar -->
-    <header >
-        <div>
-         <!-- Logo e Nome -->
-         <a href="area_pessoal.html">
-            <img src="assets/img/gym125_white.png" alt="Logo do ISEP Ginásio" height="50">
-        </a>
-        <h3>ISEP Ginásio</h3>
-        </div>
-        <div>
-            <button>Utilizador</button>
+    <header class="container-fluid bg-dark text-white">
+        <div class="row align-items-center" >
+            <div class="col-6 d-flex align-items-center p-3">
+                <!-- Logo e Nome -->
+                <a href="area_pessoal.html">
+                 <img src="assets/img/gym125_white.png" alt="Logo do ISEP Ginásio" height="40" class="me-3">
+             </a>
+             <h3 class="mb-0">ISEP Ginásio</h3>
+            </div>
+        
+             <div class="col-6 text-end p-3">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-user me-2"></i> Utilizador
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-key me-2"></i>Alterar password</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="login_form.html"><i class="fa-solid fa-right-from-bracket me-2"></i>Sair</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
-<!-- Sidebar -->
-<aside >
-    <h4>Menu</h4>
-    <nav>
-        <a href="views/clientes/lista.html"><i class="fas fa-users"></i> &ensp; Clientes</a>
-        <a href="views/agendamento/agendamento.html"><i class="fas fa-calendar-alt"></i> &ensp; Agendamento de treinos</a>
-        <a href="views/planos/planos_treino.html"><i class="fas fa-dumbbell"></i> &ensp;Planos de Treino</a>
-        <a href="views/equipamentos/equipamentos.html"><i class="fas fa-cogs"></i> &ensp;Equipamentos</a>
-        <a href="views/produtos-serviços/produtos_servicos.html"><i class="fas fa-box-open"></i>&ensp;Produtos e Serviços</a>
-    </nav>
-</aside>
-<!-- Conteúdo Principal -->
-<main >
-    <section>
-        <h2>ISEP Ginásio</h2>
-        <p>Escolhe uma opção no menu lateral para continuar.</p>
-    </section>
-</main> 
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-md-3 col-lg-2 bg-secondary text-white p-3 min-vh-100">
+                <h4>Menu</h4>
+                <nav>
+                    <a href="views/clientes/lista.html" class="nav-link text-white px-0 mb-2 d-block"><i class="fas fa-users"></i>
+                        &ensp; Clientes</a>
+                    <a href="views/agendamento/agendamento.html" class="nav-link text-white px-0 mb-2 d-block"><i
+                            class="fas fa-calendar-alt"></i> &ensp; Agendamento de treinos</a>
+                    <a href="views/planos/planos_treino.html" class="nav-link text-white px-0 mb-2 d-block"><i
+                            class="fas fa-dumbbell"></i> &ensp;Planos de Treino</a>
+                    <a href="views/equipamentos/equipamentos.html" class="nav-link text-white px-0 mb-2 d-block"><i
+                            class="fas fa-cogs"></i> &ensp;Equipamentos</a>
+                    <a href="views/produtos-serviços/produtos_servicos.html" class="nav-link text-white px-0 mb-2 d-block"><i
+                            class="fas fa-box-open"></i>&ensp;Produtos e Serviços</a>
+                </nav>
+            </aside>
+            <main class="col-md-9 col-lg-10 p-4">
+                <section>
+                    <h2>ISEP Ginásio</h2>
+                    <p>Escolhe uma opção no menu lateral para continuar.</p>
+                </section>
+            </main>
+        
+        </div>
+    </div>
+
 
     <!-- Bootstrap JS and custom JS -->
     <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
