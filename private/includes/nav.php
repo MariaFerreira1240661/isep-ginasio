@@ -4,7 +4,7 @@
             <div class="col-6 d-flex aligh-items-center p-3">
             <!--Logo e Nome -->
             <a href="index.html">
-                <img alt="Logo do ISEP Ginásio" height="50" src="assets/img/gym125_white.png"   class="me-3"> <!--alt é para descrever a imagem-->
+                <img alt="Logo do ISEP Ginásio" height="50" src="/isep-ginasio/private/assets/img/gym125_white.png"   class="me-3"> <!--alt é para descrever a imagem-->
             </a>
             <h3 class="mb-0"><?php echo APP_NAME; ?></h3> 
             </div>

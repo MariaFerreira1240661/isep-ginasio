@@ -1,75 +1,25 @@
+<?php include '../../includes/header.php'; ?>
+<?php include '../../includes/nav.php'; ?> 
+
+
+
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ISEP Ginásio</title>
-    <link rel="stylesheet" href="../../assets/fontawesome/all.min.css"> 
-    <link rel="stylesheet" href="../../assets/bootstrap/bootstrap.min.css"> 
-</head>
+
 <!-- favicon -->
  <link rel="shortcut icon" href="../../assets/img/gym125.png" type="image/png">
 
  <!--folha de estilos css-->
  <link rel="stylesheet" href="../../assets/css/app.css">
 
-<body>
-    <!--Navbar-->
-    <header class="container-fluid bg-dark text-white">
-        <div class="row align-items-center">
-            <div class="col-6 d-flex align-items-center p-3">
-            <!-- Logo e Nome -->
-                <a href="index.html">
-                    <img alt="Logo do ISEP Ginásio" height="50" src="../../assets/img/gym125_white.png" class="me-3">
-                </a>
-                <h3 class="mb-0">ISEP Ginásio</h3>
-            </div>
 
-            <div class="col-6 text-end p-3">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                        <i class="fa-regular fa-user me-2"></i> Utilizador
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                        <li>
-                            <a class="dropdown-item" href="#">
-                                <i class="fa-solid fa-key me-2"></i> Alterar password
-                            </a>
-                        </li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li>
-                            <a class="dropdown-item" href="login_form.html">
-                                <i class="fa-solid fa-right-from-bracket me-2"></i> Sair
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </header>
+    
     <!--Sidebar-->
     <div class="container-fluid">
         <div class="row">
-            <aside class="col-md-3 col-lg-2 bg-secondary text-white p-3 min-vh-100">
-                <h4>Menu</h4>
-                <nav>
-                    <a href="lista.html" class="nav-link text-white px-0 mb-2 d-block">
-                        <i class="fas fa-users"></i> Clientes
-                    </a>
-                    <a href="../agendamento/agendamento.html" class="nav-link text-white px-0 mb-2 d-block">
-                        <i class="fas fa-calendar-alt"></i> Agendamento de treinos
-                    </a>
-                    <a href="../plano_treino/plano_treino.html" class="nav-link text-white px-0 mb-2 d-block">
-                        <i class="fas fa-dumbbell"></i> Planos de treino
-                    </a>
-                    <a href="../equipamentos/equipamentos.html" class="nav-link text-white px-0 mb-2 d-block">
-                        <i class="fas fa-cogs"></i> Equipamentos
-                    </a>
-                    <a href="../produtos_servicos/produtos_servicos.html" class="nav-link text-white px-0 mb-2 d-block">
-                        <i class="fas fa-box-open"></i> Produtos e Serviços
-                    </a>
-                </nav>
-            </aside>
+            <?php include '../../includes/sidebar.php'; ?>
+
+            
 
     <!-- Conteúdo Principal-->
     <main class="col-md-9 col-lg-10 p-4">
@@ -77,7 +27,7 @@
         <div class="d-flex justify-content-center mt-4">
             <div class="card w-100 shadow rounded" style="max-width: 1200px;">
                 <div class="card-body">
-                    <h2 class="mb-4"><strong><i class="fa-solid fa-users me-2"></i> Inserir novo cliente</strong></h2> 
+                    <h2 class="mb-4"><strong><i class="fa-solid fa-pen-to-square me-2"></i> Atualização de Dados CLIENTES</strong></h2> 
                     <hr>
                     
                     <form action="#" method="post" novalidate>
@@ -85,29 +35,29 @@
                         <div class="row mb-3">
                             <div class="col-12">
                                 <label for="texto_nome" class="form-label">Nome Completo</label>
-                                <input type="text" class="form-control" id="texto_nome" name="nome_cliente" required>
+                                <input type="text" class="form-control" id="texto_nome" name="nome_cliente" value="Ana Beatriz Ferreira" required>
                             </div>
                             <div class="col-12">
                                 <label for="texto_endereco" class="form-label">Morada <small>(NºPorta, Andar)</small></label>
-                                <input type="text" class="form-control" id="texto_endereco" name="morada_cliente">
+                                <input type="text" class="form-control" id="texto_endereco" name="morada_cliente" value="Rua Clotilde Ferreira da Cruz">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <div class="col-md-3">
                                 <label for="texto_cp" class="form-label">Código Postal</label>
-                                <input type="text" class="form-control" id="texto_cp" name="cp_cliente" required>
+                                <input type="text" class="form-control" id="texto_cp" name="cp_cliente" value="4470-163" required>
                             </div>
                             <div class="col-md-3">
                                 <label for="texto_cidade" class="form-label">Cidade</label>
-                                <input type="text" class="form-control" id="texto_cidade" name="cid_cliente" required>
+                                <input type="text" class="form-control" id="texto_cidade" name="cid_cliente" value="Maia" required>
                             </div>
                             <div class="col-md-3">
                                 <label for="texto_cliente" class="form-label">Telefone</label>
-                                <input type="text" class="form-control" id="texto_cliente" name="tel_cliente" required>
+                                <input type="text" class="form-control" id="texto_cliente" name="tel_cliente" value="913184498" required>
                             </div>
                             <div class="col-md-3">
                                 <label for="texto_email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="texto_email" name="email_cliente" required>
+                                <input type="email" class="form-control" id="texto_email" name="email_cliente" value="sadasdasda@gmail.com" required>
                             </div>
                         </div>
                         <div class="row mb-3">
@@ -115,11 +65,11 @@
                                 <label class="form-label">Sexo</label>
                                 <div>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="radio_gender" id="radio_m" value="m" checked>
+                                        <input class="form-check-input" type="radio" name="radio_gender" id="radio_m" value="m">
                                     <label class="form-check-label" for="radio_m">Masculino</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="radio_gender" id="radio_f" value="f">
+                                    <input class="form-check-input" type="radio" name="radio_gender" id="radio_f" value="f" checked>
                                     <label class="form-check-label" for="radio_f">Feminino</label>
                                 </div>
                             </div>
@@ -157,7 +107,7 @@
  
        <!--Botões-->
                         <div class="d-flex justify-content-end gap-2 mb-4">
-                            <a href="lista.html" class="btn btn-outline-secondary">
+                            <a href="lista.php" class="btn btn-outline-secondary">
                                 <i class="fa-solid fa-xmark me-1"></i> Cancelar
                             </a>
                             <button type="submit" class="btn btn-primary">
@@ -174,6 +124,4 @@
         </div>
     </main>
     </div>    
-<script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+<?php include '../../includes/footer.php'; ?>

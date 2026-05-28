@@ -1,1 +1,1 @@
-<script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="/isep-ginasio/private/assets/bootstrap/bootstrap.bundle.min.js"></script>
