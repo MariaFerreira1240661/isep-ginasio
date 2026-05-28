@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISEP Ginásio</title>
+    <link rel="stylesheet" href="../../assets/fontawesome/all.min.css"> 
+
+<!-- favicon -->
+    <link rel="shortcut icon" href="../../assets/img/gym125.png" type="image/png">
+
+ <!--folha de estilos css-->
+    <link rel="stylesheet" href="../../assets/css/app.css">
+</head>
+<body>
+    <!--Navbar-->
+    <header class="container-fluid bg-dark text-white">
+        <div class="row align-items-center">
+            <div class="col-6 d-flex align-items-center p-3">
+            <!-- Logo e Nome -->
+                <a href="index.html">
+                    <img alt="Logo do ISEP Ginásio" height="50" src="../../assets/img/gym125_white.png" class="me-3">
+                </a>
+                <h3 class="mb-0">ISEP Ginásio</h3>
+            </div>
+
+            <div class="col-6 text-end p-3">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    <i class="fa-regular fa-user me-2"></i> Utilizador
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa-solid fa-key me-2"></i> Alterar password
+                            </a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <a class="dropdown-item" href="login_form.html">
+                                <i class="fa-solid fa-right-from-bracket me-2"></i> Sair
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Sidebar-->
+    <aside class="sidebar">
+        <h4>Menu</h4>
+        <nav>
+            <a href="../clientes/lista.html">Clientes</a>
+            <a href="../agendamento/agendamento.html">Agendamento de treinos</a>
+            <a href="../plano_treino/plano_treino.html">Planos de treino</a>
+            <a href="../equipamentos/equipamentos.html">Equipamentos</a>
+            <a href="produtos_serviços.html">Produtos e Serviços</a>
+        </nav>
+    </aside>
+
+    <!-- Conteúdo Principal-->
+    <main class="content">
+        <section>
+            <h2 onmouseover="console.log('Bem-vindo ao Cálculo de IMC do ISEP')">Cálculo de IMC</h2>
+            <p>Esta funcionalidade permite calcular o Índice de Massa Corporal (IMC),
+uma medida utilizada para avaliar se o peso de uma pessoa está adequado à sua
+altura.     
+            </p>
+        </section>
+    </main>
+    <div class="form-wrapper">
+        <h2><strong><i class="fa-solid fa-heart-pulse"></i> Calculadora de IMC</strong></h2>
+        <hr>
+        <form>
+            <div class="form-group">
+                <label for="peso">Peso (kg):</label>
+                <input type="number" id="peso" name="peso">
+            </div>
+            <div class="form-group">
+                <label for="altura">Altura (m):</label>
+                <input type="number" id="altura" name="altura">
+            </div>
+            <div class="form-group">
+                <label>Resultado:</label><br>
+                    <span id="indicadorIMC"> <!-- texto será atualizado dinamicamente --></span>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        console.log("Engenharia Biomédica");
+    </script>
+    <script src="../../includes/js/funcoes.js"></script>
+<script src="../../assets/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>

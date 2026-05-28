@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISEP Ginásio</title>
+    <link rel="stylesheet" href="../../assets/fontawesome/all.min.css"> 
+    <link rel="stylesheet" href="../../assets/bootstrap/bootstrap.min.css">
+</head>
+<!-- favicon -->
+ <link rel="shortcut icon" href="../../assets/img/gym125.png" type="image/png">
+
+ <!--folha de estilos css-->
+ <link rel="stylesheet" href="../../assets/css/app.css">
+
+<body>
+    <!--Navbar-->
+    <header class="container-fluid bg-dark text-white">
+        <div class="row align-items-center">
+            <div class="col-6 d-flex align-items-center p-3">
+            <!-- Logo e Nome -->
+                <a href="index.html">
+                    <img alt="Logo do ISEP Ginásio" height="50" src="../../assets/img/gym125_white.png" class="me-3">
+                </a>
+                <h3 class="mb-0">ISEP Ginásio</h3>
+            </div>
+
+            <div class="col-6 text-end p-3">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    <i class="fa-regular fa-user me-2"></i> Utilizador
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa-solid fa-key me-2"></i> Alterar password
+                            </a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <a class="dropdown-item" href="login_form.html">
+                                <i class="fa-solid fa-right-from-bracket me-2"></i> Sair
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Sidebar-->
+    <div class="container-fluid">
+    <div class="row">
+
+        <!-- Sidebar -->
+        <aside class="col-md-3 col-lg-2 bg-secondary text-white p-3 min-vh-100">
+            <h4>Menu</h4>
+            <nav>
+                <a href="lista.html" class="nav-link text-white px-0 mb-2 d-block">
+                    <i class="fas fa-users"></i> Clientes
+                </a>
+                <a href="../agendamento/agendamento.html" class="nav-link text-white px-0 mb-2 d-block">
+                    <i class="fas fa-calendar-alt"></i> Agendamento de treinos
+                </a>
+                <a href="../plano_treino/plano_treino.html" class="nav-link text-white px-0 mb-2 d-block">
+                    <i class="fas fa-dumbbell"></i> Planos de treino
+                </a>
+                <a href="../equipamentos/equipamentos.html" class="nav-link text-white px-0 mb-2 d-block">
+                    <i class="fas fa-cogs"></i> Equipamentos
+                </a>
+                <a href="../produtos_servicos/produtos_servicos.html" class="nav-link text-white px-0 mb-2 d-block">
+                    <i class="fas fa-box-open"></i> Produtos e Serviços
+                </a>
+            </nav>
+        </aside>
+    
+
+    <!-- Conteúdo Principal-->
+        <main class="col-md-9 col-lg-10 p-4">
+            <div class="d-flex justify-content-center mt-4">
+                <div class="card w-100 shadow rounded" style="max-width: 900px;">
+                    <div class="card-body">
+                        
+                        <h2 class="mb-4">
+                            <strong><i class="fa-solid fa-user me-2"></i> Detalhes do Cliente</strong> </h2>
+                        <hr>
+ 
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Nome Completo</label>
+                            <p class="form-control-plaintext">João Silva</p>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Morada</label>
+                            <p class="form-control-plaintext">Rua das Flores, nº12, 2º Esq.</p>
+                        </div>
+                        <div class="row mb-3">
+                        <div class="col-md-4">
+                            <label class="form-label fw-bold">Código Postal</label>
+                            <p class="form-control-plaintext">4000-123</p>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label fw-bold">Cidade</label>
+                            <p class="form-control-plaintext">Porto</p>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label fw-bold">Telefone</label>
+                            <p class="form-control-plaintext">912345678</p>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Email</label>
+                        <p class="form-control-plaintext">joao.silva@email.pt</p>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label fw-bold">Sexo</label>
+                            <p class="form-control-plaintext">Masculino</p>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label fw-bold">Data de nascimento</label>
+                            <p class="form-control-plaintext">1985-07-20</p>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <label class="form-label fw-bold">Estado Civil</label>
+                            <p class="form-control-plaintext">Casado</p>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label fw-bold">Sistema de Saúde</label>
+                            <p class="form-control-plaintext">ADSE</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <a href="lista.html" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-arrow-left me-1"></i> Voltar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+<script src="assets/bootstrap/bootstrap.bundle.min.js"></script> 
+</body>
+</html>
