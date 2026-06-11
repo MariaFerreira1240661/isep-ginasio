@@ -1,18 +1,13 @@
+<?php
+
+require_once __DIR__ . '/../../includes/funcoes.php';
+redirect_if_not_logged();
+
+?>
+
+
 <?php include '../../includes/header.php'; ?>
 <?php include '../../includes/nav.php'; ?> 
-
-
-
-<!DOCTYPE html>
-<html lang="pt">
-
-<!-- favicon -->
- <link rel="shortcut icon" href="../../assets/img/gym125.png" type="image/png">
-
- <!--folha de estilos css-->
- <link rel="stylesheet" href="../../assets/css/app.css">
-
-
     
     <!--Sidebar-->
     <div class="container-fluid">

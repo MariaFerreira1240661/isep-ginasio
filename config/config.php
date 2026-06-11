@@ -1,4 +1,6 @@
 <?php
+define('BASE_URL', '/isep-ginasio');
+
 // Configurações globais da aplicação
 define('APP_NAME', 'ISEP Ginásio');
 define('APP_VERSION', '1.0.0');

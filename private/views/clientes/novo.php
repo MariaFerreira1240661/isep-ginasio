@@ -1,19 +1,13 @@
+<?php
+
+require_once __DIR__ . '/../../includes/funcoes.php';
+redirect_if_not_logged();
+
+?>
+
+
 <?php include '../../includes/header.php'; ?>
-<?php include '../../includes/nav.php'; ?> 
-
-
-
-<!DOCTYPE html>
-<html lang="pt">
-
-<!-- favicon -->
- <link rel="shortcut icon" href="../../assets/img/gym125.png" type="image/png">
-
- <!--folha de estilos css-->
- <link rel="stylesheet" href="../../assets/css/app.css">
-
-
-    
+<?php include '../../includes/nav.php'; ?>     
     <!--Sidebar-->
     <div class="container-fluid">
         <div class="row">
@@ -67,10 +61,11 @@
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="radio_gender" id="radio_m" value="m" checked>
                                     <label class="form-check-label" for="radio_m">Masculino</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="radio_gender" id="radio_f" value="f">
-                                    <label class="form-check-label" for="radio_f">Feminino</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="radio_gender" id="radio_f" value="f">
+                                        <label class="form-check-label" for="radio_f">Feminino</label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -122,6 +117,8 @@
                 </div>
             </div>
         </div>
-    </main>
-    </div>    
+        </main>
+        </div>
+    </div>
+
 <?php include '../../includes/footer.php'; ?>
